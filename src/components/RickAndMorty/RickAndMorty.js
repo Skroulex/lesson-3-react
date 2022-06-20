@@ -9,7 +9,6 @@ const RickAndMorty = () => {
     const [value,setValue] = useState()
     async function getData(){
         let res = await axios(API)
-        console.log(res)
         setData(res.data.results)
     }
     useEffect(() =>{
